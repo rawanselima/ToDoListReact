@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+  margin-inline: auto;
+  margin-top: 50px;
+  background-image: linear-gradient(to right, #adadad, #99c2ca, #acedff);
+  max-width: 500px;
+  text-align: center;
+}
+
+main input[type="text"] {
+  padding: 6px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+main input[type="text"]:first-child {
+  width: calc(95% - 140px);
+}
+main input[type="text"]:nth-last-child(1) {
+  display: block;
+  margin-inline: auto;
+  width: 95%;
+}
+main button {
+  height: 100%;
+  width: 100px;
+  margin: 15px 20px;
+  padding: 2.5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  color: #223a3e;
+  font-weight: bold;
+}
+main button span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.content .item {
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #223a3e;
+}
+.content .item input[type="checkbox"] {
+  margin-right: 10px;
+  position: relative;
+  /* appearance: none; */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .item {
+  position: relative;
+}
+.content .trash {
+  cursor: pointer;
+  font-size: 30px;
+  height: fit-content;
+  position: absolute;
+  right: 0;
+}
+.content .items {
+  height: fit-content;
+}
+.content .item.checked p {
+  text-decoration: line-through;
+}
+.content .item input[type="checkbox"]:checked {
+  background-color: #99c2ca;
+  border-color: #99c2ca;
+}
